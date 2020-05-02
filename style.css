@@ -1,5 +1,3 @@
-/* new line here */
-
 html, body {
     background-color: #FFFFFF;
     padding: 0px;
@@ -120,7 +118,6 @@ html, body {
     margin-top: 90px;
     width: auto;
     height: auto;
-    overflow-y: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -220,9 +217,9 @@ html, body {
     height: 450px;
 }
 
-/* @media (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .container {
-        padding: 0px 50px 0px 50px;
+        padding: 0px 60px 0px 60px;
         overflow-x: hidden;
     }
 
@@ -230,23 +227,77 @@ html, body {
         display: none;
     }
 
+    .section {
+        transform: translateX(-90px);
+    }
+
     .page-hero {
-        width: 100vh;
+        margin-top: 35px;
+        display: flex;
+        justify-content: flex-start;
+        transform: scale(0.8);
+    }
+
+    .hero-caption {
+        width: 530px;
+    }
+
+    .hero-image {
+        width: 360px;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 0px 40px 0px 40px;
+        overflow-x: hidden;
+    }
+
+    .section {
+        transform: translateX(-80px);
+    }
+
+    .page-hero {
+        margin-top: 0px;
+        width: inherit;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         flex-direction: column;
+        transform: scale(0.7);
     }
 
     .hero-caption {
-        width: inherit;
-        transform: scale(0.85) translateX(-45px);
+        margin-bottom: 100px;
+    }
+
+    .hero-image {
+        width: 380px;
+        height: 380px;
+        transform: translateX(200px);
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    container {
+        padding: 0px 10px 0px 10px;
+        overflow-x: hidden;
+    }
+
+    .hero-caption {
+        transform: scale(0.85) translateX(-65px);
         margin-bottom: 60px;
     }
 
     .hero-image {
-        width: 420px;
-        height: 420px;
-        overflow-x: hidden;
+        width: 430px;
+        height: 430px;
+        transform: translateX(180px);
     }
-} */
+
+    .caption-little {
+        width: 100vh;
+    }
+}
