@@ -218,7 +218,7 @@ html, body {
     height: 450px;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .container {
         padding: 0px 50px 0px 50px;
         overflow-x: hidden;
@@ -247,4 +247,4 @@ html, body {
         height: 420px;
         overflow-x: hidden;
     }
-}
+} */
